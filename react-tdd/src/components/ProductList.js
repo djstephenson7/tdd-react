@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function ProductList (props) {
   return (
@@ -6,4 +7,7 @@ function ProductList (props) {
   )
 }
 
+ProductList.propTypes = {
+  products: PropTypes.array.isRequired,
+}
 export default ProductList;
