@@ -1,10 +1,7 @@
 import React from 'react';
-import Enzyme from 'enzyme';
-import { shallow } from 'enzyme';
 import ProductList from './ProductList';
-import Adapter from 'enzyme-adapter-react-16';
-
-Enzyme.configure({ adapter: new Adapter() });
+import { shallow } from 'enzyme';
+import './setupTests';
 
 it('should render a list of components as an unordered list', () => {
   const mockProducts  = [
