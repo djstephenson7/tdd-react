@@ -17,5 +17,6 @@ function ProductList (props) {
 
 ProductList.propTypes = {
   products: PropTypes.array.isRequired,
+  onProductSelect: PropTypes.func.isRequired
 }
 export default ProductList;
