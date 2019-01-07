@@ -6,7 +6,7 @@ function ProductList (props) {
     <ul>
       {
         props.products.map(product => (
-            <li key={product.id}>
+            <li key={product.id} onClick={() => props.onProductSelect(product)}>
               {product.name} ({product.brand})
             </li>
         ))
